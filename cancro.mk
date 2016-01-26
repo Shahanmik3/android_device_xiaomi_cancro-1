@@ -216,6 +216,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     $(LOCAL_PATH)/audio/acdb/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
+# Nexus 5 "Robots for Everyone" ringtone
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/ringtones/RobotsforEveryone.ogg:system/media/audio/ringtones/RobotsforEveryone.ogg
+
 PRODUCT_PACKAGES += \
     audiod \
     audio.a2dp.default \
