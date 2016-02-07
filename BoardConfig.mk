@@ -57,6 +57,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/cancro
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := cancro_custom_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_BOARD_KERNEL_HEADERS := $(CANCRO_PATH)/kernel-headers
 
 # Vendor init
 TARGET_UNIFIED_DEVICE := true
@@ -148,9 +149,6 @@ TARGET_NO_RPC := true
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
-
-# Use HW crypto for ODE
-TARGET_HW_DISK_ENCRYPTION := false
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
