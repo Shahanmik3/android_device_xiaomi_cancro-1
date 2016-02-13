@@ -29,16 +29,16 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk
 $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 
 # Inherit some common CM stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
 
 # Call the proprietary setup if it exits
 $(call inherit-product-if-exists, vendor/xiaomi/cancro/cancro-vendor.mk)
 
 # Product configuration
-PRODUCT_NAME := cm_cancro
+PRODUCT_NAME := du_cancro
 PRODUCT_DEVICE := cancro
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
@@ -50,7 +50,7 @@ TARGET_VENDOR_DEVICE_NAME := cancro
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Unofficial build id
-TARGET_UNOFFICIAL_BUILD_ID := BaNkS
+TARGET_UNOFFICIAL_BUILD_ID := Shahan-mik3
 
 # Device prop overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
