@@ -154,8 +154,8 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Ril
-TARGET_RIL_VARIANT := caf
-FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
+#TARGET_RIL_VARIANT := caf
+#FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 
 # Simple time service client
 BOARD_USES_QC_TIME_SERVICES := true
@@ -184,3 +184,4 @@ BOARD_SEPOLICY_DIRS += $(CANCRO_PATH)/sepolicy
 
 # Include if exists
 -include vendor/xiaomi/cancro/BoardConfigVendor.mk
+
