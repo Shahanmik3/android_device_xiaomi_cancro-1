@@ -160,15 +160,28 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
-    $(LOCAL_PATH)/audio/listen_platform_info.xml:system/etc/listen_platform_info.xml \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
-    $(LOCAL_PATH)/audio/acdb/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+    $(LOCAL_PATH)/audio/mixer_paths_3.xml:system/etc/mixer_paths_3.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_4.xml:system/etc/mixer_paths_4.xml \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_Bluetooth_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_General_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_General_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_Global_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_Global_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_Handset_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_Hdmi_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_Headset_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/3/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP_tmp/3/MTP_Speaker_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_Bluetooth_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_General_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_General_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_Global_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_Global_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_Handset_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_Hdmi_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_Headset_cal.acdb \
+    $(LOCAL_PATH)/audio/acdbdata/MTP/4/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP_tmp/4/MTP_Speaker_cal.acdb \
+    $(LOCAL_PATH)/audio/diracmobile_3.config:system/vendor/etc/diracmobile_3.config \
+    $(LOCAL_PATH)/audio/diracmobile_4.config:system/vendor/etc/diracmobile_4.config
+
+# Dynamic audio script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/releasetools/dynamicaudio.sh:install/bin/dynamicaudio.sh
 
 # Nexus 5 "Robots for Everyone" ringtone
 PRODUCT_COPY_FILES += \
