@@ -120,7 +120,7 @@
          that can be set by the user. -->
     <integer name="config_screenBrightnessDim">1</integer>
 
-    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+<!--    <bool name="config_deviceHasVariableButtonBrightness">true</bool> -->
 
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
